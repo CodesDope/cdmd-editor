@@ -2,7 +2,7 @@
 
 > A custom lightweight markdown editor for CodesDope
 
-[![NPM](https://img.shields.io/npm/v/cdmd-editor.svg)](https://www.npmjs.com/package/cdmd-editor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<!-- [![NPM](https://img.shields.io/npm/v/cdmd-editor.svg)](https://www.npmjs.com/package/cdmd-editor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) -->
 
 ## Install
 
@@ -13,15 +13,15 @@ npm install --save cdmd-editor
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from 'cdmd-editor'
-import 'cdmd-editor/dist/index.css'
+import MyComponent from 'cdmd-editor';
+import 'cdmd-editor/dist/index.css';
 
 class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+    render() {
+        return <MyComponent />;
+    }
 }
 ```
 
