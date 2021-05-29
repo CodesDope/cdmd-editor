@@ -1,6 +1,6 @@
 import React from 'react';
 import { PluginComponent } from '../plugins';
-import { BsListOl } from 'react-icons/bs';
+import { GoListOrdered } from 'react-icons/go';
 
 export default class OrderedList extends PluginComponent {
     static pluginName = 'list-ordered';
@@ -29,10 +29,10 @@ export default class OrderedList extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-list-ordered'
+                className='cdmd-button-toolbar button-type-list-ordered'
                 title='Ordered List'
                 onClick={() => this.props.editor.insertMarkdown('order')}>
-                <BsListOl />
+                <GoListOrdered />
             </span>
         );
     }

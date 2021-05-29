@@ -29,7 +29,7 @@ export default class Underline extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-underline'
+                className='cdmd-button-toolbar button-type-underline'
                 title='Underline'
                 onClick={() => this.props.editor.insertMarkdown('underline')}>
                 <BsTypeUnderline />

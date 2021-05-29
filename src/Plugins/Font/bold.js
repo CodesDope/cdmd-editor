@@ -29,7 +29,7 @@ export default class Bold extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-bold'
+                className='cdmd-button-toolbar button-type-bold'
                 title='Bold'
                 onClick={() => this.props.editor.insertMarkdown('bold')}>
                 <BsTypeBold />

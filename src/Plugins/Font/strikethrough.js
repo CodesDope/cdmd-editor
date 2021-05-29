@@ -29,7 +29,7 @@ export default class Strikethrough extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-strikethrough'
+                className='cdmd-button-toolbar button-type-strikethrough'
                 title='Strikethrough'
                 onClick={() => this.props.editor.insertMarkdown('strikethrough')}>
                 <BsTypeStrikethrough />

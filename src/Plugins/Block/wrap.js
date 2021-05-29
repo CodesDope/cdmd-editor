@@ -1,6 +1,6 @@
 import React from 'react';
 import { PluginComponent } from '../plugins';
-import { BsHr } from 'react-icons/bs';
+import { AiOutlineLine } from 'react-icons/ai';
 
 export default class BlockWrap extends PluginComponent {
     static pluginName = 'block-wrap';
@@ -8,8 +8,11 @@ export default class BlockWrap extends PluginComponent {
 
     render() {
         return (
-            <span className='button button-type-hr' title='Line' onClick={() => this.props.editor.insertMarkdown('hr')}>
-                <BsHr />
+            <span
+                className='cdmd-button-toolbar button-type-hr'
+                title='Line'
+                onClick={() => this.props.editor.insertMarkdown('hr')}>
+                <AiOutlineLine />
             </span>
         );
     }

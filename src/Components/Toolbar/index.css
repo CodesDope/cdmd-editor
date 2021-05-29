@@ -1,4 +1,27 @@
 :global .cdmd-navbar {
     width: 100%;
-    background-color: #d1d1d1;
+    background-color: #f0f0f0;
+    padding: 1px 5px;
+    box-sizing: border-box;
+}
+:global .cdmd-button-toolbar {
+    cursor: pointer;
+    font-size: 16px;
+    color: #5f5f5f;
+    display: inline-block;
+    padding: 7px 9px 8.5px;
+}
+
+:global .cdmd-button-toolbar svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+:global .cdmd-button-toolbar:hover {
+    color: #272727;
+}
+
+:global .cdmd-navbar .disabled {
+    color: #cacaca;
+    pointer-events: none;
 }

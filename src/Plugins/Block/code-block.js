@@ -1,6 +1,6 @@
 import React from 'react';
 import { PluginComponent } from '../plugins';
-import { BsCodeSlash } from 'react-icons/bs';
+import { CgCodeSlash } from 'react-icons/cg';
 
 export default class BlockCode extends PluginComponent {
     static pluginName = 'block-code-block';
@@ -9,10 +9,10 @@ export default class BlockCode extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-code'
+                className='cdmd-button-toolbar button-type-code'
                 title='Code'
                 onClick={() => this.props.editor.insertMarkdown('code')}>
-                <BsCodeSlash />
+                <CgCodeSlash />
             </span>
         );
     }

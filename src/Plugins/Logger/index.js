@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PluginComponent } from '../../Plugins/plugins';
-import { IoMdUndo, IoMdRedo } from 'react-icons/io';
+import { IoArrowUndo, IoArrowRedo } from 'react-icons/io5';
 import LoggerPlugin from './logger';
 
 const LOGGER_INTERVAL = 600;
@@ -93,16 +93,16 @@ export default class Logger extends PluginComponent {
         return (
             <React.Fragment>
                 <span
-                    className={`button button-type-undo ${hasUndo ? '' : 'disabled'}`}
+                    className={`cdmd-button-toolbar button-type-undo ${hasUndo ? '' : 'disabled'}`}
                     title='Undo'
                     onClick={this.handleUndo}>
-                    <IoMdUndo />
+                    <IoArrowUndo />
                 </span>
                 <span
-                    className={`button button-type-redo ${hasRedo ? '' : 'disabled'}`}
+                    className={`cdmd-button-toolbar button-type-redo ${hasRedo ? '' : 'disabled'}`}
                     title='Redo'
                     onClick={this.handleRedo}>
-                    <IoMdRedo />
+                    <IoArrowRedo />
                 </span>
             </React.Fragment>
         );

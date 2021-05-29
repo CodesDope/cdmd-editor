@@ -1,11 +1,16 @@
 :global .cdmd-parent-container {
-    width: 100%;
-    border: 5px solid red;
+    border: 1px solid rgb(216, 216, 216);
 }
 :global .cdmd-textarea {
-    width: 100%;
     resize: none;
-    font-size: 15px;
+    font-size: 14px;
     outline: none;
     border: none;
+    border-top: 1px solid rgb(216, 216, 216);
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    padding: 7px;
+    color: rgb(58, 58, 58);
 }

@@ -29,7 +29,7 @@ export default class Italic extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-italic'
+                className='cdmd-button-toolbar button-type-italic'
                 title='Italic'
                 onClick={() => this.props.editor.insertMarkdown('italic')}>
                 <BsTypeItalic />

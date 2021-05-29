@@ -1,6 +1,6 @@
 import React from 'react';
 import { PluginComponent } from './plugins';
-import { AiOutlineLink } from 'react-icons/ai';
+import { IoLinkSharp } from 'react-icons/io5';
 
 export default class Link extends PluginComponent {
     static pluginName = 'link';
@@ -29,10 +29,10 @@ export default class Link extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-link'
+                className='cdmd-button-toolbar button-type-link'
                 title='Link'
                 onClick={() => this.props.editor.insertMarkdown('link')}>
-                <AiOutlineLink />
+                <IoLinkSharp />
             </span>
         );
     }

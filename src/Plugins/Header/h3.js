@@ -8,7 +8,10 @@ export default class H3 extends PluginComponent {
 
     render() {
         return (
-            <span className='button button-type-h3' title='H3' onClick={() => this.props.editor.insertMarkdown('h3')}>
+            <span
+                className='cdmd-button-toolbar button-type-h3'
+                title='H3'
+                onClick={() => this.props.editor.insertMarkdown('h3')}>
                 <BsTypeH3 />
             </span>
         );
