@@ -25,6 +25,10 @@ class Example extends Component {
 }
 ```
 
+## Thanks
+
+This project is inspired from [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite/)
+
 ## License
 
-MIT © [amit-codesdope](https://github.com/amit-codesdope)
+MIT © [CodesDope](https://github.com/codesdope)

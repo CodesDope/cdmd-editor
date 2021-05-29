@@ -1,5 +1,6 @@
-import React from 'react';
+import Editor from './Editor';
+import Bold from './Plugins/Font/bold';
 
-export const ExampleComponent = ({ text }) => {
-    return <div>Example Component: {text}</div>;
-};
+Editor.use(Bold);
+
+export default Editor;
