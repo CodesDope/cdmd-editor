@@ -29,6 +29,22 @@ class Example extends Component {
 
 This project is inspired from [react-markdown-editor-lite](https://github.com/HarryChen0506/react-markdown-editor-lite/)
 
+## API
+
+| prop                   | Description                                                                                                              |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| cdmdContainerClassName | Parent wrapper className                                                                                                 |
+| toolbarClassName       | Toolbar wrapper className                                                                                                |
+| textareaId             | Textarea Id (default is cdmd-editor-area)                                                                                |
+| name                   | Textarea name                                                                                                            |
+| placeholder            | Textarea placeholder                                                                                                     |
+| readOnly               | If textarea is read-only                                                                                                 |
+| editorClassName        | Textarea className                                                                                                       |
+| rows                   | Number of rows (default is 5)                                                                                            |
+| value                  | Value of textarea                                                                                                        |
+| defaultValue           | Default value of textarea                                                                                                |
+| onChange               | A funcation to receive content of the textarea -> {text: textareaContent}. E.g. - handleChange(obj) {setState(obj.text)} |
+
 ## License
 
 MIT © [CodesDope](https://github.com/codesdope)
