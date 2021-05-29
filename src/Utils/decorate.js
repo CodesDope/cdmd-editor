@@ -77,7 +77,7 @@ const getDecorated = (target, type, option) => {
             };
         case 'image':
             return {
-                text: `![${target || option.target}](${option.imageUrl || ''})`,
+                text: `![${target}](${option.imageUrl || 'https://'})`,
                 selection: {
                     start: 2,
                     end: target.length + 2
@@ -85,7 +85,7 @@ const getDecorated = (target, type, option) => {
             };
         case 'link':
             return {
-                text: `[${target}](${option.linkUrl || ''})`,
+                text: `[${target}](${option.linkUrl || 'https://'})`,
                 selection: {
                     start: 1,
                     end: target.length + 1

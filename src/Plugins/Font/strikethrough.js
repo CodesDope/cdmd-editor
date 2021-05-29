@@ -1,20 +1,20 @@
 import React from 'react';
 import { PluginComponent } from '../plugins';
-import { BsTypeBold } from 'react-icons/bs';
+import { BsTypeStrikethrough } from 'react-icons/bs';
 
-export default class Bold extends PluginComponent {
-    static pluginName = 'bold';
+export default class Strikethrough extends PluginComponent {
+    static pluginName = 'strikethrough';
     static align = 'left';
 
     constructor(props) {
         super(props);
 
         this.handleKeyboard = {
-            key: 'b',
-            keyCode: 66,
+            key: 'd',
+            keyCode: 68,
             aliasCommand: true,
             withKey: ['ctrlKey'],
-            callback: () => this.props.editor.insertMarkdown('bold')
+            callback: () => this.props.editor.insertMarkdown('strikethrough')
         };
     }
 
@@ -29,10 +29,10 @@ export default class Bold extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-bold'
-                title='Bold'
-                onClick={() => this.props.editor.insertMarkdown('bold')}>
-                <BsTypeBold />
+                className='button button-type-strikethrough'
+                title='Strikethrough'
+                onClick={() => this.props.editor.insertMarkdown('strikethrough')}>
+                <BsTypeStrikethrough />
             </span>
         );
     }

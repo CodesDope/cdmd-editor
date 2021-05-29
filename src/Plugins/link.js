@@ -1,20 +1,20 @@
 import React from 'react';
-import { PluginComponent } from '../plugins';
-import { BsTypeBold } from 'react-icons/bs';
+import { PluginComponent } from './plugins';
+import { AiOutlineLink } from 'react-icons/ai';
 
-export default class Bold extends PluginComponent {
-    static pluginName = 'bold';
+export default class Link extends PluginComponent {
+    static pluginName = 'link';
     static align = 'left';
 
     constructor(props) {
         super(props);
 
         this.handleKeyboard = {
-            key: 'b',
-            keyCode: 66,
+            key: 'k',
+            keyCode: 75,
             aliasCommand: true,
             withKey: ['ctrlKey'],
-            callback: () => this.props.editor.insertMarkdown('bold')
+            callback: () => this.props.editor.insertMarkdown('link')
         };
     }
 
@@ -29,10 +29,10 @@ export default class Bold extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-bold'
-                title='Bold'
-                onClick={() => this.props.editor.insertMarkdown('bold')}>
-                <BsTypeBold />
+                className='button button-type-link'
+                title='Link'
+                onClick={() => this.props.editor.insertMarkdown('link')}>
+                <AiOutlineLink />
             </span>
         );
     }

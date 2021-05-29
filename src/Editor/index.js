@@ -3,6 +3,7 @@ import './index.css';
 import Toolbar from '../Components/Toolbar';
 import getDecorated from '../Utils/decorate';
 import { isKeyMatch } from '../Utils/tools';
+import emitter from '../Share/emitter';
 
 class Editor extends React.Component {
     constructor(props) {
@@ -147,6 +148,7 @@ class Editor extends React.Component {
         if (this.props.onChange) {
             this.props.onChange({ text });
         }
+        emitter.emit(emitter.EVENT_CHANGE, value, event, typeof event === 'undefined');
         if (newSelection) {
             setTimeout(() => this.setSelection(newSelection));
         }
@@ -194,6 +196,44 @@ class Editor extends React.Component {
                 it.callback(e);
                 return;
             }
+        }
+        emitter.emit(emitter.EVENT_KEY_DOWN, e);
+    }
+
+    getMdValue() {
+        return this.state.text;
+    }
+
+    getEventType(event) {
+        switch (event) {
+            case 'change':
+                return emitter.EVENT_CHANGE;
+            case 'fullscreen':
+                return emitter.EVENT_FULL_SCREEN;
+            case 'viewchange':
+                return emitter.EVENT_VIEW_CHANGE;
+            case 'keydown':
+                return emitter.EVENT_KEY_DOWN;
+            case 'blur':
+                return emitter.EVENT_BLUR;
+            case 'focus':
+                return emitter.EVENT_FOCUS;
+            case 'scroll':
+                return emitter.EVENT_SCROLL;
+        }
+    }
+
+    on(event, cb) {
+        const eventType = this.getEventType(event);
+        if (eventType) {
+            emitter.on(eventType, cb);
+        }
+    }
+
+    off(event, cb) {
+        const eventType = this.getEventType(event);
+        if (eventType) {
+            emitter.off(eventType, cb);
         }
     }
 

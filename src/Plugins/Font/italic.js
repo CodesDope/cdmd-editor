@@ -1,20 +1,20 @@
 import React from 'react';
 import { PluginComponent } from '../plugins';
-import { BsTypeBold } from 'react-icons/bs';
+import { BsTypeItalic } from 'react-icons/bs';
 
-export default class Bold extends PluginComponent {
-    static pluginName = 'bold';
+export default class Italic extends PluginComponent {
+    static pluginName = 'italic';
     static align = 'left';
 
     constructor(props) {
         super(props);
 
         this.handleKeyboard = {
-            key: 'b',
-            keyCode: 66,
+            key: 'i',
+            keyCode: 73,
             aliasCommand: true,
             withKey: ['ctrlKey'],
-            callback: () => this.props.editor.insertMarkdown('bold')
+            callback: () => this.props.editor.insertMarkdown('italic')
         };
     }
 
@@ -29,10 +29,10 @@ export default class Bold extends PluginComponent {
     render() {
         return (
             <span
-                className='button button-type-bold'
-                title='Bold'
-                onClick={() => this.props.editor.insertMarkdown('bold')}>
-                <BsTypeBold />
+                className='button button-type-italic'
+                title='Italic'
+                onClick={() => this.props.editor.insertMarkdown('italic')}>
+                <BsTypeItalic />
             </span>
         );
     }
