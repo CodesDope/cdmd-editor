@@ -260,6 +260,7 @@ class Editor extends React.Component {
                     wrap='hard'
                     onChange={this.handleChange}
                     rows={this.props.rows || 5}
+                    spellCheck={this.props.spellCheck || false}
                 />
             </div>
         );

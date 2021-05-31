@@ -44,6 +44,7 @@ This project is inspired from [react-markdown-editor-lite](https://github.com/Ha
 | value                  | Value of textarea                                                                                                        |
 | defaultValue           | Default value of textarea                                                                                                |
 | onChange               | A funcation to receive content of the textarea -> {text: textareaContent}. E.g. - handleChange(obj) {setState(obj.text)} |
+| spellCheck             | Boolean (default is `false`)                                                                                             |
 
 ## License
 
