@@ -18,6 +18,8 @@ class Editor extends React.Component {
         this.handleKeyDown = this.handleKeyDown.bind(this);
 
         this.editorRef = React.createRef();
+
+        this.enableEmoji = typeof this.props.gfmLiveEmoji === 'undefined' ? true : this.props.gfmLiveEmoji;
     }
 
     componentDidUpdate(prevProps) {
@@ -140,6 +142,10 @@ class Editor extends React.Component {
     }
 
     changeText(value = '', event, newSelection) {
+        if (this.enableEmoji) {
+            var emoji = require('node-emoji');
+            value = emoji.emojify(value);
+        }
         const text = value.replace(/↵/g, '\n');
         if (this.state.text === value) {
             return;
