@@ -14,6 +14,7 @@ import Image from './Plugins/image';
 import Table from './Plugins/table';
 import H2 from './Plugins/Header/h2';
 import H3 from './Plugins/Header/h3';
+import Emoji from './Plugins/Emoji';
 
 Editor.use(H2);
 Editor.use(H3);
@@ -29,6 +30,7 @@ Editor.use(Hr);
 Editor.use(Link);
 Editor.use(Image);
 Editor.use(Table);
+Editor.use(Emoji);
 Editor.use(Logger);
 
 export default Editor;

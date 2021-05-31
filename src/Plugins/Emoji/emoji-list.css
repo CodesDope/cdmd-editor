@@ -1,0 +1,9 @@
+:global .cdmd-emoji-wrapper {
+}
+:global .cdmd-emoji-cat-container {
+    margin-top: 1px;
+}
+:global .cdmd-emoji-span {
+    padding: 3px 6px;
+    display: inline-block;
+}

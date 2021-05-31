@@ -1,0 +1,24 @@
+:global .cdmd-drop-wrap {
+    position: absolute;
+    z-index: 2;
+    min-width: 20px;
+    padding: 7px 7px;
+    background-color: #f0f0f0;
+    border: 1px solid rgb(216, 216, 216);
+    overflow-y: auto;
+    text-align: center;
+    margin-top: 2px;
+}
+:global .cdmd-drop-wrap-left {
+    left: 0 !important;
+}
+:global .cdmd-drop-wrap-right {
+    right: 0 !important;
+}
+:global .cdmd-drop-wrap-center {
+    left: 50%;
+    transform: translate(-50%);
+}
+:global .cdmd-drop-wrap-hidden {
+    display: none !important;
+}

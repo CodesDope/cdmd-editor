@@ -90,6 +90,14 @@ const getDecorated = (target, type, option) => {
                     end: target.length + 1
                 }
             };
+        case 'emoji':
+            return {
+                text: option.unicode,
+                selection: {
+                    start: 2,
+                    end: 2
+                }
+            };
     }
     return {
         text: target,

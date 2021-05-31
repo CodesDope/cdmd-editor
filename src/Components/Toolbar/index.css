@@ -25,3 +25,7 @@
     color: #cacaca;
     pointer-events: none;
 }
+
+:global .cdmd-button-toolbar-dropdown {
+    position: relative;
+}
