@@ -3,7 +3,6 @@ import { repeat } from './tools';
 let SIMPLE_DECORATOR = {
     bold: ['**', '**'],
     italic: ['*', '*'],
-    underline: ['++', '++'],
     strikethrough: ['~~', '~~'],
     quote: ['\n> ', '\n'],
     inlinecode: ['`', '`'],

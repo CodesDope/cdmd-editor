@@ -1,7 +1,6 @@
 import Editor from './Editor';
 import Bold from './Plugins/Font/bold';
 import Italic from './Plugins/Font/italic';
-import Underline from './Plugins/Font/underline';
 import Strikethrough from './Plugins/Font/strikethrough';
 import OrderedList from './Plugins/List/ordered';
 import UnorderedList from './Plugins/List/unordered';
@@ -20,7 +19,6 @@ Editor.use(H2);
 Editor.use(H3);
 Editor.use(Bold);
 Editor.use(Italic);
-Editor.use(Underline);
 Editor.use(Strikethrough);
 Editor.use(UnorderedList);
 Editor.use(OrderedList);
