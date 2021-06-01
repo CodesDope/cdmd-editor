@@ -9,7 +9,7 @@ import Code from './Plugins/Block/code-block';
 import CodeInline from './Plugins/Block/code-inline';
 import Hr from './Plugins/Block/wrap';
 import Link from './Plugins/link';
-import Logger from './plugins/logger';
+import Logger from './Plugins/Logger';
 import Image from './Plugins/image';
 import Table from './Plugins/table';
 import H2 from './Plugins/Header/h2';
